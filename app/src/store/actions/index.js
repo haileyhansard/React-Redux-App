@@ -8,9 +8,9 @@ export const fetchCases = () => {
     return dispatch => {
         dispatch ({ type: FETCH_CASES_START });
         axios
-            .get("https://quote-garden.herokuapp.com/api/v2/quotes/random")
+            .get("https://quote-garden.herokuapp.com/api/v2/quotes")
             .then(res => {
-                dispatch({ type: FETCH_CASES_SUCCESS, payload: res.data.quote.quoteText });
+                dispatch({ type: FETCH_CASES_SUCCESS, payload: res.data.quotes });
             })
                 
             .catch(err => {

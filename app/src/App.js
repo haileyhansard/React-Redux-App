@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-          COVID 19 Tracker
+          Quote Generator
       </header>
       <div>Here is the div to return to data</div>
       <CasesList />

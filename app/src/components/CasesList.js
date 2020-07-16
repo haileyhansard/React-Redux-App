@@ -14,7 +14,7 @@ const CasesList = props => {
             {props.cases.length > 0 && ( 
                 <div>
                     {props.cases.map(data => (
-                        key={quote.quoteText} cases={data} //confused on this part, cant get it to work
+                       <div style={{border: '1px solid black'}} key={data._id}>{`${data.quoteText} by ${data.quoteAuthor}`}</div> //quote component
                     ))}
                 </div>
             )}
