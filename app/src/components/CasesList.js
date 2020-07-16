@@ -9,12 +9,12 @@ const CasesList = props => {
 
     return (
         <div>
-            {props.isLoading && <h4>Loading COVID 19 data...</h4>}
+            {props.isLoading && <h4>Loading Random Quote data...</h4>}
             {props.error && (<h4>Oops, something went wrong... {props.error}</h4>)}
             {props.cases.length > 0 && ( 
                 <div>
                     {props.cases.map(data => (
-                       <div style={{border: '1px solid black'}} key={data._id}>{`${data.quoteText} by ${data.quoteAuthor}`}</div> //quote component
+                       <div style={{border: '1px solid #c052d1', margin: '1%', height: '30px', padding: '1%', width: '1000px', textAlign: 'center', background: '#e9cced', color: '#282c34'}} key={data._id}>{`${data.quoteText} by ${data.quoteAuthor}`}</div> //quote component
                     ))}
                 </div>
             )}

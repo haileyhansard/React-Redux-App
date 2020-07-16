@@ -8,7 +8,7 @@ function App() {
       <header className="App-header">
           Quote Generator
       </header>
-      <div>Here is the div to return to data</div>
+      <div style={{height: '40px', color: '#c052d1', margin: '2%', fontSize: '20px'}}> Here are your Quotes for the Day!</div>
       <CasesList />
     </div>
   );
