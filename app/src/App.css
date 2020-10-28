@@ -9,13 +9,41 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: 2rem;
   color: #61dafb;
 }
 
 .list {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   align-content: center;
-  justify-content: center;
+  justify-content: center; */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.quote-box {
+  background: pink;
+  width: 400px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 1%;
+}
+
+.quote-text {
+  font-size: 2rem;
+  
+}
+button {
+  border: none;
+  background-color: white;
+  border-radius: 5px;
+  width: 120px;
+  height: 30px;
+  cursor: pointer;
+
 }

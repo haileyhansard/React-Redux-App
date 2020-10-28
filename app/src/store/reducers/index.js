@@ -1,30 +1,30 @@
 import {
-    FETCH_CASES_START,
-    FETCH_CASES_SUCCESS,
-    FETCH_CASES_FAILURE
+    FETCH_QUOTES_START,
+    FETCH_QUOTES_SUCCESS,
+    FETCH_QUOTES_FAILURE
 } from '../actions';
 
 const initialState = {
     isLoading: false,
-    cases: [],
+    quotes: [],
     error: ''
 };
 
 export const reducer = (state = initialState, action) => {
     switch (action.type) {
-        case FETCH_CASES_START:
+        case FETCH_QUOTES_START:
             return {
                 ...state,
                 isLoading: true
             };
-        case FETCH_CASES_SUCCESS:
+        case FETCH_QUOTES_SUCCESS:
             return {
                 ...state,
                 isLoading: false,
-                cases: action.payload,
+                quotes: action.payload,
                 error: ''
             };
-        case FETCH_CASES_FAILURE:
+        case FETCH_QUOTES_FAILURE:
             return {
                 ...state,
                 isLoading: false,

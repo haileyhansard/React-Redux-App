@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import CasesList from './components/CasesList';
+import QuotesList from './components/QuotesList';
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
       </header>
       <div style={{height: '40px', color: '#c052d1', margin: '2%', fontSize: '20px'}}> Here are your Quotes for the Day!</div>
       <div className="list">
-        <CasesList />
+        <QuotesList />
       </div>
     </div>
   );
